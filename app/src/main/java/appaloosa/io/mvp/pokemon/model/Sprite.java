@@ -1,8 +1,8 @@
-package appaloosa.io.mvp;
+package appaloosa.io.mvp.pokemon.model;
 
 import com.google.gson.annotations.SerializedName;
 
 public class Sprite {
     @SerializedName("front_default")
-    String frontDefault;
+    public String frontDefault;
 }
