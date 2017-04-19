@@ -7,13 +7,5 @@ public class Pokemon {
     public String name;
     @SerializedName("sprites")
     public Sprite spritesUrls;
-    Bitmap mSprite;
-
-    public Bitmap getSprite() {
-        return mSprite;
-    }
-
-    public void setSprite(Bitmap sprite) {
-        mSprite = sprite;
-    }
+    public Bitmap mSprite;
 }

@@ -47,7 +47,7 @@ public class PokemonInteractorImpl
 
     @Override
     public void onSpriteDownloadedSuccess(Bitmap sprite) {
-        mFetchedPokemon.setSprite(sprite);
+        mFetchedPokemon.mSprite = sprite;
         mOnPokemonFetchedListener.onPokemonFetchedSuccess(mFetchedPokemon);
     }
 
