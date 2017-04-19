@@ -5,9 +5,10 @@ import android.graphics.drawable.Drawable;
 import appaloosa.io.mvp.pokemon.contracts.PokemonSpriteDownloader;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Picasso.LoadedFrom;
+import com.squareup.picasso.Target;
 
 
-public class PokemonSpriteDownloaderImpl implements PokemonSpriteDownloader {
+public class PokemonSpriteDownloaderImpl implements PokemonSpriteDownloader, Target {
     private final Picasso mPicasso;
     private OnPokemonSpriteDownloadedListener mListener;
 
