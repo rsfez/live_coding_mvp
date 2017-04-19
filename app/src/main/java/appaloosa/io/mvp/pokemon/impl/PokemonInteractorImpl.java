@@ -39,7 +39,7 @@ public class PokemonInteractorImpl
     public void onCompleted(Exception e, Pokemon pokemon) {
         if(e == null && pokemon != null) {
             mFetchedPokemon = pokemon;
-            mPokemonSpriteDownloader.fetchImage(pokemon.spritesUrls.frontDefault, this);
+            mPokemonSpriteDownloader.fetchImage(pokemon.mSpritesUrls.mFrontDefault, this);
         } else {
             mOnPokemonFetchedListener.onPokemonFetchedError("Could not fetch pokemon");
         }

@@ -23,7 +23,7 @@ public class PokemonPresenterImpl implements PokemonPresenter, OnPokemonFetchedL
 
     @Override
     public void onPokemonFetchedSuccess(Pokemon pokemon) {
-        mPokemonView.displayPokemonName(pokemon.name);
+        mPokemonView.displayPokemonName(pokemon.mName);
         mPokemonView.displayPokemonSprite(pokemon.mSprite);
     }
 

@@ -4,8 +4,9 @@ import android.graphics.Bitmap;
 import com.google.gson.annotations.SerializedName;
 
 public class Pokemon {
-    public String name;
+    @SerializedName("name")
+    public String mName;
     @SerializedName("sprites")
-    public Sprite spritesUrls;
+    public SpritesUrl mSpritesUrls;
     public Bitmap mSprite;
 }
